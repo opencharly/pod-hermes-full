@@ -13,13 +13,13 @@ hermes-full:
             supervised service when the box is deployed. Dropping any candy from the
             candy: list makes the matching check below fail.
         candy:
-            - hermes
-            - claude-code
-            - codex
+            - '@github.com/opencharly/pod-hermes:v2026.237.936'
+            - '@github.com/opencharly/layer-claude-code:v2026.237.430'
+            - '@github.com/opencharly/layer-codex:v2026.237.556'
             - '@github.com/opencharly/layer-gemini:v2026.235.2110'
-            - forgecode
-            - dev-tools
-            - devops-tools
+            - '@github.com/opencharly/layer-forgecode:v2026.237.427'
+            - '@github.com/opencharly/layer-dev-tools:v2026.237.502'
+            - '@github.com/opencharly/layer-devops-tools:v2026.237.502'
             - '@github.com/opencharly/layer-tmux:v2026.235.2057'
         plan:
             - check: the hermes agent binary is installed in the pixi default env
